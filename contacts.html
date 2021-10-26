@@ -8,32 +8,35 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./css/modern-normalize.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.min.css">
     <title>Contacts</title>
 </head>
 <body>
 
     <header class="header">
         <div class="container border">
-            <a href="./index.html" class="header-logo"><span class="logo-web">Web</span><span
-                    class="logo-studio">Studio</span></a>
+            <a href="./index.html" class="logo"><span class="logo__web">Web</span><span
+                    class="logo__studio">Studio</span></a>
+    
             <nav class="header-nav">
-                <ul class="nav-list">
-                    <li class="nav-item"><a class="nav-link" href="./index.html">Студия</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./portfolio.html">Портфолио</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="./contacts.html">Контакты</a></li>
+                <ul class="header-nav__list">
+                    <li class="header-nav__item"><a class="header-nav__link " href="./index.html">Студия</a></li>
+                    <li class="header-nav__item"><a class="header-nav__link" href="./portfolio.html">Портфолио</a></li>
+                    <li class="header-nav__item"><a class="header-nav__link active" href="./contacts.html">Контакты</a></li>
                 </ul>
             </nav>
+    
             <div class="header-contacts">
     
-                <a href="mailto:info@devstudio.com" class="contacts-mail">
-                    <svg class="mail-icon">
+                <a href="mailto:info@devstudio.com" class="header-contacts__mail">
+                    <svg height="12" width="16" class="header-contacts__icon">
                         <use href="./images/icons.svg#mail"></use>
                     </svg>
                     info@devstudio.com
                 </a>
     
-                <a href="tel:+380961111111" class="contacts-number">
-                    <svg class="mobile-icon">
+                <a href="tel:+380961111111" class="header-contacts__number">
+                    <svg height="16" width="10" class="header-contacts__icon">
                         <use href="./images/icons.svg#mobile"></use>
                     </svg>
                     +38 096 111 11 11
@@ -47,8 +50,9 @@
     <footer class="footer">
         <div class="container inline">
     
-            <div class="footer-info">
-                <a href="./index.html"><span class="logo-web">Web</span><span class="footer-logo-studio">Studio</span></a>
+            <div class="footer__info">
+                <a href="./index.html"><span class="logo__web">Web</span><span
+                        class="logo__studio studio-white">Studio</span></a>
                 <address class="address">г. Киев, пр-т Леси Украинки, 26</address>
                 <div class="footer-contacts">
                     <a href="mailto:info@devstudio.com" class="footer-mail">info@devstudio.com</a>
@@ -56,8 +60,8 @@
                 </div>
             </div>
     
-            <div class="welcome">
-                <p class="welcome-title">Присоединяйтесь</p>
+            <div class="footer__links">
+                <p class="footer__block-title">Присоединяйтесь</p>
                 <ul class="welcome-list">
                     <li class="welcome-item">
                         <a href="" class="welcome-link">
@@ -89,12 +93,12 @@
                     </li>
                 </ul>
             </div>
-            <div class="subscribe">
-                <p class="subscribe-title">Подпишитесь на рассылку</p>
+            <div class="footer-subscribe">
+                <p class="footer__block-title subscribe-title">Подпишитесь на рассылку</p>
                 <form name="subscribe-form">
-                    <input class="subscribe-input" type="email" placeholder="E-mail">
-                    <button class="subscribe-btn" type="submit">Подписаться
-                        <svg class="btn-icon" height="24" width="24">
+                    <input class="subscribe__input" type="email" placeholder="E-mail">
+                    <button class="button" type="submit">Подписаться
+                        <svg class="button__icon" height="24" width="24">
                             <use href="./images/icons.svg#telegram-btn-icon"></use>
                         </svg>
                     </button>

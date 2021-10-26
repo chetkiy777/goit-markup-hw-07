@@ -7,86 +7,92 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/modern-normalize.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.min.css">
     <title>Studio</title>
 </head>
 <body>
 
     
-
-        <!-- Header - block -->
+        <!-- Backdrop with modal - block -->
+       
         <div class="backdrop is-hidden" data-backdrop>
             <div class="modal">
                 
-                <form class="order-form">
-                    <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+                <form class="form">
+                    <p class="form__title">Оставьте свои данные, мы вам перезвоним</p>
                     
-                    <div class="form-field">
-                        <label class="field-label" for="name">Имя</label>
-                        <input class="field-input" type="text" name="name" id="name">
-                        <svg class="icon" height="13" width="13">
+                    <div class="field">
+                        <label class="field__label" for="name">Имя</label>
+                        <input class="field__input" type="text" name="name" id="name">
+                        <svg class="field__icon" height="13" width="13">
                             <use href="./images/icons.svg#name-input-icon"></use>
                         </svg>
                     </div> 
 
-                    <div class="form-field">
-                        <label class="field-label" for="tel">Телефон</label>
-                        <input class="field-input" type="tel" name="tel" id="tel">
-                        <svg class="icon" height="13" width="13">
+                    <div class="field">
+                        <label class="field__label" for="tel">Телефон</label>
+                        <input class="field__input" type="tel" name="tel" id="tel">
+                        <svg class="field__icon" height="13" width="13">
                             <use href="./images/icons.svg#phone-input-icon"></use>
                         </svg>
                     </div>
 
-                    <div class="form-field">
-                        <label class="field-label" for="mail">Почта</label>
-                        <input class="field-input" type="email" name="mail" id="mail">
-                        <svg class="icon" height="13" width="13">
+                    <div class="field">
+                        <label class="field__label" for="mail">Почта</label>
+                        <input class="field__input" type="email" name="mail" id="mail">
+                        <svg class="field__icon" height="13" width="13">
                             <use href="./images/icons.svg#mail-input-icon"></use>
                         </svg>
                     </div>
                 
-                    <label class="field-label" for="comment">Комментарий</label>
-                    <textarea class="field-input comment" name="comment" id="comment" placeholder="Введите текст"></textarea>
+                    <label class="field__label" for="comment">Комментарий</label>
+                    <textarea class="field__input field__input--comment" name="comment" id="comment" placeholder="Введите текст"></textarea>
                     
                     
                     <label class="accept-label" for="accept">
-                    <input class="checkbox" type="checkbox" name="accept" id="accept"/>
-                    <span class="check-icon"></span>
-                    Соглашаюсь с рассылкой и принимаю <span class="doc">Условия договора</span></label>
+                    <input class="accept-label__checkbox" type="checkbox" name="accept" id="accept"/>
+                    <span class="accept-label__icon"></span>
+                    Соглашаюсь с рассылкой и принимаю <span class="accept-label--doc">Условия договора</span></label>
                     
                 
 
-                    <button type="submit" class="send-btn">Отправить</button>
+                    <button type="submit" class="button button-send">Отправить</button>
                 </form>
 
-                <button class="close-btn" data-modal-close>
-                    <svg class="close-icon" height="11" width="11">
+                <button class="button-close" data-modal-close>
+                    <svg class="button-close__icon" height="11" width="11">
                         <use href="./images/icon-close.svg#close-icon"></use>
                     </svg>
                 </button>
             </div>
         </div>
     
+
+        <!-- Header - block -->
+
         <header class="header">
             <div class="container border">
-                <a href="./index.html" class="header-logo"><span class="logo-web">Web</span><span class="logo-studio">Studio</span></a>
-                    <nav class="header-nav">
-                        <ul class="nav-list">
-                            <li class="nav-item"><a class="nav-link active" href="./index.html">Студия</a></li>
-                            <li class="nav-item"><a class="nav-link" href="./portfolio.html">Портфолио</a></li>
-                            <li class="nav-item"><a class="nav-link" href="./contacts.html">Контакты</a></li>
-                        </ul>            
-                    </nav>
+                <a href="./index.html" class="logo"><span class="logo__web">Web</span><span class="logo__studio">Studio</span></a>
+
+                <nav class="header-nav">
+                    <ul class="header-nav__list">
+                        <li class="header-nav__item"><a class="header-nav__link active" href="./index.html">Студия</a></li>
+                        <li class="header-nav__item"><a class="header-nav__link" href="./portfolio.html">Портфолио</a></li>
+                        <li class="header-nav__item"><a class="header-nav__link" href="./contacts.html">Контакты</a></li>
+                    </ul>            
+                </nav>
+
                 <div class="header-contacts">
                     
-                    <a href="mailto:info@devstudio.com" class="contacts-mail">
-                        <svg class="mail-icon">
+                    <a href="mailto:info@devstudio.com" class="header-contacts__mail">
+                        <svg height="12" width="16" class="header-contacts__icon">
                             <use href="./images/icons.svg#mail"></use>
                         </svg>
                         info@devstudio.com
                     </a>
                 
-                    <a href="tel:+380961111111" class="contacts-number">
-                        <svg class="mobile-icon">
+                    <a href="tel:+380961111111" class="header-contacts__number">
+                        <svg  height="16" width="10" class="header-contacts__icon">
                             <use href="./images/icons.svg#mobile"></use>
                         </svg>
                         +38 096 111 11 11
@@ -103,7 +109,7 @@
         <main class="main-block">
             <section class="title-section">
                 <h1>Эффективные решения <br/> для вашего бизнеса</h1>
-                <button type="button" class="get-btn" data-modal-open>Заказать услугу</button>
+                <button type="button" class="button button-get" data-modal-open>Заказать услугу</button>
             </section>
 
             
@@ -393,8 +399,8 @@
         <footer class="footer">
             <div class="container inline">
                 
-                <div class="footer-info">
-                    <a href="./index.html"><span class="logo-web">Web</span><span class="footer-logo-studio">Studio</span></a>
+                <div class="footer__info">
+                    <a href="./index.html"><span class="logo__web">Web</span><span class="logo__studio studio-white" >Studio</span></a>
                     <address class="address">г. Киев, пр-т Леси Украинки, 26</address>
                     <div class="footer-contacts">
                         <a href="mailto:info@devstudio.com" class="footer-mail">info@devstudio.com</a>
@@ -402,8 +408,8 @@
                     </div>
                 </div>
 
-                <div class="welcome">
-                    <p class="welcome-title">Присоединяйтесь</p>
+                <div class="footer__links">
+                    <p class="footer__block-title">Присоединяйтесь</p>
                     <ul class="welcome-list">
                         <li class="welcome-item">
                             <a href="" class="welcome-link">
@@ -435,12 +441,12 @@
                         </li>
                     </ul>
                 </div>
-                <div class="subscribe">
-                    <p class="subscribe-title">Подпишитесь на рассылку</p>
+                <div class="footer-subscribe">
+                    <p class="footer__block-title subscribe-title">Подпишитесь на рассылку</p>
                     <form name="subscribe-form">
-                        <input class="subscribe-input" type="email" placeholder="E-mail">
-                        <button class="subscribe-btn" type="submit">Подписаться
-                            <svg class="btn-icon" height="24" width="24">
+                        <input class="subscribe__input" type="email" placeholder="E-mail">
+                        <button class="button" type="submit">Подписаться
+                            <svg class="button__icon" height="24" width="24">
                                 <use href="./images/icons.svg#telegram-btn-icon"></use>
                             </svg>
                         </button>
