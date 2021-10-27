@@ -586,14 +586,14 @@
 
 /* Main-block Portfolio-Page */
 
-.filter-btns {
+.filters__list {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-bottom: 50px;
 }
 
-.filter-btn {
+.filters__btn {
   cursor: pointer;
   margin-right: 8px;
   border: none;
@@ -615,34 +615,34 @@
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.filter-btn:focus,
-.filter-btn:hover {
+.filters__btn:focus,
+.filters__btn:hover {
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   color: var(--main-white-color);
 }
 
-.works-list {
+.projects {
   display: flex;
   flex-flow: row wrap;
 }
 
-.works-list-item {
+.projects__item {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.works-item-thumb {
+.projects__thumb {
   position: relative;
   overflow: hidden;
 }
 
-.works-list-item:hover .drop-item {
+.projects__item:hover .projects__drop-item {
   transform: translateY(0);
   opacity: 1;
 }
 
-.drop-item {
+.projects__drop-item {
   position: absolute;
   top: 0;
   left: 0;
@@ -664,7 +664,7 @@
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.works-list-item:hover {
+.projects__item:hover {
   cursor: pointer;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -679,19 +679,19 @@
   margin-right: 30px;
 }
 
-.works-list-item img {
+.projects__item .projects__img {
   display: block;
   max-width: 100%;
 }
 
-.text-thumb {
+.projects__text-thumb {
   max-width: 370px;
   background-color: #fff;
   border: 1px solid var(--card-border-color);
   padding: 24px;
 }
 
-.works-list-item .item-title {
+.projects__item .item-title {
   text-transform: none;
   font-weight: bold;
   font-size: 18px;
@@ -699,7 +699,7 @@
   color: var(--main-text-color);
 }
 
-.works-list-item .works-item-text {
+.projects__item .projects__text {
   font-size: 16px;
   line-height: 1.9;
   color: var(--secondary-text-color);
