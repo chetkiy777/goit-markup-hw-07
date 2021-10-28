@@ -13,6 +13,7 @@ Use a better box model (opinionated).
 ::before,
 ::after {
   box-sizing: border-box;
+  font-family: 'Roboto';
 }
 
 /**
@@ -41,7 +42,7 @@ Sections
 body {
   margin: 0; /* 1 */
   font-family: system-ui, -apple-system,
-    /* Firefox supports this but not yet `system-ui` */ 'Segoe UI', Roboto, Helvetica, Arial,
+    /* Firefox supports this but not yet `system-ui` */ 'Segoe UI', 'Roboto', Helvetica, Arial,
     sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Raleway';
   box-sizing: border-box;
   color: $main-text-color;
@@ -69,6 +70,7 @@ p {
 }
 
 h1 {
+  font-family: 'Roboto';
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -78,6 +80,7 @@ h1 {
 }
 
 h2 {
+  font-family: 'Roboto';
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
